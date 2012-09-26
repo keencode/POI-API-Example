@@ -10,8 +10,8 @@
 #import "FSNConnection.h"
 
 // Enter your Foursquare developer keys
-#define FSQClientID     @""
-#define FSQClientSecret @""
+#define FSQ_CLIENT_ID     @""
+#define FSQ_CLIENT_SECRET @""
 
 @interface FoursquareService ()
 
@@ -20,17 +20,6 @@
 @implementation FoursquareService
 
 @synthesize delegate = _delegate;
-
-#pragma mark - Initialization
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        //
-    }
-    return self;
-}
 
 #pragma mark - Data loading
 
@@ -41,8 +30,8 @@
     
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 locationStr, @"ll",
-                                FSQClientID, @"client_id",
-                                FSQClientSecret, @"client_secret",
+                                FSQ_CLIENT_ID, @"client_id",
+                                FSQ_CLIENT_SECRET, @"client_secret",
                                 @"20120702", @"v", // api version date
                                 nil];
     

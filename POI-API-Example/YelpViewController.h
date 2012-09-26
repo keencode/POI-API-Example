@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "YelpService.h"
 
-@interface SecondViewController : UIViewController <YelpServiceDelegate, MKMapViewDelegate>
+@interface YelpViewController : UIViewController <YelpServiceDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 
@@ -22,7 +22,5 @@
 
 @property (nonatomic, strong) YelpService *yelpService;
 @property (nonatomic, strong) NSArray *pointsOfInterest;
-
-//- (void)searchVenuesForLocation:(CLLocation *)location;
 
 @end

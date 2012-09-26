@@ -17,10 +17,10 @@
 		B8474A3916124E6700AA2235 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3816124E6700AA2235 /* Default@2x.png */; };
 		B8474A3B16124E6700AA2235 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3A16124E6700AA2235 /* Default-568h@2x.png */; };
 		B8474A3E16124E6700AA2235 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3C16124E6700AA2235 /* MainStoryboard.storyboard */; };
-		B8474A4116124E6700AA2235 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4016124E6700AA2235 /* FirstViewController.m */; };
+		B8474A4116124E6700AA2235 /* FoursquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4016124E6700AA2235 /* FoursquareViewController.m */; };
 		B8474A4316124E6700AA2235 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4216124E6700AA2235 /* first.png */; };
 		B8474A4516124E6700AA2235 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4416124E6700AA2235 /* first@2x.png */; };
-		B8474A4816124E6700AA2235 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4716124E6700AA2235 /* SecondViewController.m */; };
+		B8474A4816124E6700AA2235 /* YelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4716124E6700AA2235 /* YelpViewController.m */; };
 		B8474A4A16124E6700AA2235 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4916124E6700AA2235 /* second.png */; };
 		B8474A4C16124E6700AA2235 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4B16124E6700AA2235 /* second@2x.png */; };
 		B8474A5F1612508400AA2235 /* YelpVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A5E1612508400AA2235 /* YelpVenue.m */; };
@@ -68,12 +68,12 @@
 		B8474A3816124E6700AA2235 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B8474A3A16124E6700AA2235 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B8474A3D16124E6700AA2235 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B8474A3F16124E6700AA2235 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B8474A4016124E6700AA2235 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B8474A3F16124E6700AA2235 /* FoursquareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoursquareViewController.h; sourceTree = "<group>"; };
+		B8474A4016124E6700AA2235 /* FoursquareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoursquareViewController.m; sourceTree = "<group>"; };
 		B8474A4216124E6700AA2235 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		B8474A4416124E6700AA2235 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		B8474A4616124E6700AA2235 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B8474A4716124E6700AA2235 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B8474A4616124E6700AA2235 /* YelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpViewController.h; sourceTree = "<group>"; };
+		B8474A4716124E6700AA2235 /* YelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpViewController.m; sourceTree = "<group>"; };
 		B8474A4916124E6700AA2235 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		B8474A4B16124E6700AA2235 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B8474A5D1612508400AA2235 /* YelpVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpVenue.h; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		B8474A521612501900AA2235 /* Foursquare */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A3F16124E6700AA2235 /* FirstViewController.h */,
-				B8474A4016124E6700AA2235 /* FirstViewController.m */,
+				B8474A3F16124E6700AA2235 /* FoursquareViewController.h */,
+				B8474A4016124E6700AA2235 /* FoursquareViewController.m */,
 				B8474A4216124E6700AA2235 /* first.png */,
 				B8474A4416124E6700AA2235 /* first@2x.png */,
 			);
@@ -257,8 +257,8 @@
 		B8474A531612502600AA2235 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A4616124E6700AA2235 /* SecondViewController.h */,
-				B8474A4716124E6700AA2235 /* SecondViewController.m */,
+				B8474A4616124E6700AA2235 /* YelpViewController.h */,
+				B8474A4716124E6700AA2235 /* YelpViewController.m */,
 				B8474A4916124E6700AA2235 /* second.png */,
 				B8474A4B16124E6700AA2235 /* second@2x.png */,
 			);
@@ -410,8 +410,8 @@
 			files = (
 				B8474A3116124E6700AA2235 /* main.m in Sources */,
 				B8474A3516124E6700AA2235 /* AppDelegate.m in Sources */,
-				B8474A4116124E6700AA2235 /* FirstViewController.m in Sources */,
-				B8474A4816124E6700AA2235 /* SecondViewController.m in Sources */,
+				B8474A4116124E6700AA2235 /* FoursquareViewController.m in Sources */,
+				B8474A4816124E6700AA2235 /* YelpViewController.m in Sources */,
 				B8474A5F1612508400AA2235 /* YelpVenue.m in Sources */,
 				B8474A631612511A00AA2235 /* YelpService.m in Sources */,
 				B8474A661612513000AA2235 /* MapAnnotation.m in Sources */,

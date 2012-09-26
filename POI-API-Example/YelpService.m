@@ -13,10 +13,10 @@
 #import "OAMutableURLRequest.h"
 
 // Enter your Yelp developer keys
-#define CONSUMER_KEY        @""
-#define CONSUMER_SECRET     @""
-#define TOKEN               @""
-#define TOKEN_SECRET        @""
+#define YELP_CONSUMER_KEY        @""
+#define YELP_CONSUMER_SECRET     @""
+#define YELP_TOKEN               @""
+#define YELP_TOKEN_SECRET        @""
 
 @implementation YelpService
 
@@ -24,14 +24,16 @@
 @synthesize connection = _connection;
 @synthesize responseData = _responseData;
 
+#pragma mark - Data loading
+
 - (void)searchVenuesForLocation:(CLLocation *)location
 {
     NSString *urlStr = [NSString stringWithFormat:@"http://api.yelp.com/v2/search?ll=%f,%f",
                         location.coordinate.latitude, location.coordinate.longitude];
     NSURL *URL = [NSURL URLWithString:urlStr];
     
-    OAConsumer *consumer = [[OAConsumer alloc] initWithKey:CONSUMER_KEY secret:CONSUMER_SECRET];
-    OAToken *token = [[OAToken alloc] initWithKey:TOKEN secret:TOKEN_SECRET];
+    OAConsumer *consumer = [[OAConsumer alloc] initWithKey:YELP_CONSUMER_KEY secret:YELP_CONSUMER_SECRET];
+    OAToken *token = [[OAToken alloc] initWithKey:YELP_TOKEN secret:YELP_TOKEN_SECRET];
     
     id<OASignatureProviding, NSObject> provider = [[OAHMAC_SHA1SignatureProvider alloc] init];
     NSString *realm = nil;

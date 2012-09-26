@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Cocoa Star Apps. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FoursquareViewController.h"
 #import "FSVenue.h"
 #import "MapAnnotation.h"
 
-@interface FirstViewController ()
+@interface FoursquareViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation FoursquareViewController
 
 @synthesize mapView = _mapView;
 @synthesize fsqService = _fsqService;

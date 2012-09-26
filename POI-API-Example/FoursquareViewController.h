@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "FoursquareService.h"
 
-@interface FirstViewController : UIViewController <FoursquareServiceDelegate, MKMapViewDelegate>
+@interface FoursquareViewController : UIViewController <FoursquareServiceDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 

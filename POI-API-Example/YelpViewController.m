@@ -6,17 +6,17 @@
 //  Copyright (c) 2012 Cocoa Star Apps. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "YelpViewController.h"
 #import "MapAnnotation.h"
 #import "YelpVenue.h"
 
-@interface SecondViewController ()
+@interface YelpViewController ()
 
 - (void)updateMapView;
 
 @end
 
-@implementation SecondViewController
+@implementation YelpViewController
 
 @synthesize mapView = _mapView;
 @synthesize yelpService = _yelpService;
