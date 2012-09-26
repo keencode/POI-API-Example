@@ -3,8 +3,9 @@ POI-API-Example
 
 ## Submodules
 
-To download the **FSNetworking** and **Yelp** submodules, run the below command after cloning this repository.
+To download the **FSNetworking** and **Yelp** submodules, run the below commands after cloning this repository.
 
+> git submodules init 
 > git submodules update 
 
 For more information on the **FSNetworking** API, please visit:
