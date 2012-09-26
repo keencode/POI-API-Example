@@ -1,0 +1,6 @@
+[submodule "FSNetworking"]
+	path = FSNetworking
+	url = git://github.com/foursquare/FSNetworking.git
+[submodule "Yelp-API"]
+	path = Yelp-API
+	url = git://github.com/Yelp/yelp-api.git
