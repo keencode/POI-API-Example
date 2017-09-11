@@ -3,7 +3,7 @@
 //  POI-API-Example
 //
 //  Created by Yee Peng Chia on 8/1/12.
-//  Copyright (c) 2012 Cocoa Star Apps, Corp. All rights reserved.
+//  Copyright (c) 2012 Keen Code LLC, Corp. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

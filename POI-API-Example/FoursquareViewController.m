@@ -3,7 +3,7 @@
 //  POI-API-Example
 //
 //  Created by Peng on 9/25/12.
-//  Copyright (c) 2012 Cocoa Star Apps. All rights reserved.
+//  Copyright (c) 2012 Keen Code LLC. All rights reserved.
 //
 
 #import "FoursquareViewController.h"

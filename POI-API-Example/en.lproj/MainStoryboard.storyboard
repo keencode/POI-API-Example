@@ -1,117 +1,110 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Jwo-Wg-x4V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Foursquare View Controller - First-->
+        <!--Foursquare-->
         <scene sceneID="11">
             <objects>
-                <viewController title="First" id="2" customClass="FoursquareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="2" customClass="MapViewController" customModule="POI_API_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LLf-f1-liV"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZy-yl-hUs"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-b6-i6b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
-                                    <outlet property="delegate" destination="2" id="wdH-co-OT6"/>
+                                    <outlet property="delegate" destination="2" id="ftv-3e-5Tw"/>
                                 </connections>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="ei0-wu-CCv"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="t4m-Xd-QiT"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="xHd-OQ-XWP"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="yU4-5l-BII"/>
+                            <constraint firstItem="f0E-b6-i6b" firstAttribute="top" secondItem="16" secondAttribute="top" id="ei0-wu-CCv"/>
+                            <constraint firstItem="f0E-b6-i6b" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="t4m-Xd-QiT"/>
+                            <constraint firstItem="f0E-b6-i6b" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="xHd-OQ-XWP"/>
+                            <constraint firstItem="f0E-b6-i6b" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="yU4-5l-BII"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Foursquare" image="second" id="7"/>
+                    <navigationItem key="navigationItem" id="LND-Wi-tHW"/>
                     <connections>
-                        <outlet property="mapView" destination="f0E-b6-i6b" id="MOJ-ci-iG5"/>
+                        <outlet property="mapView" destination="f0E-b6-i6b" id="AH4-Vz-8Ef"/>
                         <outlet property="view" destination="16" id="g3N-B5-avT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="863" y="121"/>
         </scene>
-        <!--Yelp View Controller - Second-->
-        <scene sceneID="13">
+        <!--Root View Controller-->
+        <scene sceneID="TgR-xy-cEL">
             <objects>
-                <viewController title="Second" id="3" customClass="YelpViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                <tableViewController id="mnI-Wt-xrc" customClass="RootViewController" customModule="POI_API_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ulf-hg-yzy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iqc-Ty-pcG">
-                                <connections>
-                                    <outlet property="delegate" destination="3" id="3CK-qG-eHg"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iqc-Ty-pcG" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="0OW-X6-JyC"/>
-                            <constraint firstItem="iqc-Ty-pcG" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="Nux-rr-3KK"/>
-                            <constraint firstItem="iqc-Ty-pcG" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="h8Z-3C-5TA"/>
-                            <constraint firstItem="iqc-Ty-pcG" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="t3E-5B-WML"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Yelp" image="first.png" id="6"/>
-                    <connections>
-                        <outlet property="mapView" destination="iqc-Ty-pcG" id="WYh-3k-QkP"/>
-                        <outlet property="view" destination="17" id="q5Q-Wn-p6h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="eOi-Cv-knJ" style="IBUITableViewCellStyleDefault" id="fGu-Fx-0Qz">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fGu-Fx-0Qz" id="gpM-LM-wbw">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eOi-Cv-knJ">
+                                            <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mnI-Wt-xrc" id="f6a-as-QBO"/>
+                            <outlet property="delegate" destination="mnI-Wt-xrc" id="6Y7-KI-0EE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="YZQ-ic-Isi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukY-o1-1jr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="341.5" y="120.5"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="15">
+        <!--Navigation Controller-->
+        <scene sceneID="26y-qY-ptU">
             <objects>
-                <tabBarController id="4" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jwo-Wg-x4V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Se7-dV-cxc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
-                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="mnI-Wt-xrc" kind="relationship" relationship="rootViewController" id="2is-v4-gwf"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Koo-c1-Ifh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="-186" y="121"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first.png" width="30" height="30"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="FoursquareViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FoursquareViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="YelpViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/YelpViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-    </classes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
