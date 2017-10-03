@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Jwo-Wg-x4V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Jwo-Wg-x4V">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,32 +20,35 @@
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-b6-i6b">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <connections>
-                                    <outlet property="delegate" destination="2" id="ftv-3e-5Tw"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="top" secondItem="16" secondAttribute="top" id="ei0-wu-CCv"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="t4m-Xd-QiT"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="xHd-OQ-XWP"/>
-                            <constraint firstItem="f0E-b6-i6b" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="yU4-5l-BII"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Foursquare" image="second" id="7"/>
                     <navigationItem key="navigationItem" id="LND-Wi-tHW"/>
                     <connections>
-                        <outlet property="mapView" destination="f0E-b6-i6b" id="AH4-Vz-8Ef"/>
                         <outlet property="view" destination="16" id="g3N-B5-avT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863" y="121"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="6QM-hH-pJo">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Pxi-iz-UJn" customClass="LoginViewController" customModule="POI_API_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dX1-Vs-yZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DSe-hR-Es3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PEQ-oO-gcb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcx-uL-Uu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="928"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="TgR-xy-cEL">

@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import GooglePlaces
 
 class MapViewController: UIViewController {
     
@@ -26,17 +27,36 @@ class MapViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let type = apiType, let loc = location else {
-            return
-        }
+//        guard let type = apiType, let loc = location else {
+//            return
+//        }
         
-        APIService.fetchData(for: type,
-                             location: loc,
-                             successHandler: { venues in
-            //
-        }) { (error) in
-            //
-        }
+//        APIService.fetchData(for: type,
+//                             location: loc,
+//                             successHandler: { venues in
+//            //
+//        }) { (error) in
+//            //
+//        }
+        
+        let placesClient = GMSPlacesClient.shared()
+        
+        placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
+            if let error = error {
+                print("Pick Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let placeLikelihoodList = placeLikelihoodList {
+                for likelihood in placeLikelihoodList.likelihoods {
+                    let place = likelihood.place
+                    print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
+//                    print("Current Place address \(place.formattedAddress)")
+//                    print("Current Place attributions \(place.attributions)")
+                    print("Current PlaceID \(place.placeID)")
+                }
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {

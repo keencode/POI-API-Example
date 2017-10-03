@@ -19,13 +19,17 @@ class APIService: NSObject {
     
     static func fetchData(for type: APIType,
                           location: CLLocation,
-                          successHandler: ((_ points: [Venue]) -> Void),
-                          failureHandler: ((_ error: Error) -> Void)) {
+                          successHandler: @escaping ((_ points: [Venue]) -> Void),
+                          failureHandler: @escaping ((_ error: Error) -> Void)) {
         switch type {
         case .facebook:
-            self.fetchFacebook(with: location, successHandler: successHandler, failureHandler: failureHandler)
+            FacebookService.fetchPlaces(with: location,
+                                        successHandler: successHandler,
+                                        failureHandler: failureHandler)
         case .google:
-            self.fetchGoogle(with: location, successHandler: successHandler, failureHandler: failureHandler)
+            GoogleService.fetchPlaces(with: location,
+                                      successHandler: successHandler,
+                                      failureHandler: failureHandler)
         case .yelp:
             self.fetchYelp(with: location, successHandler: successHandler, failureHandler: failureHandler)
         default:
@@ -33,21 +37,9 @@ class APIService: NSObject {
         }
     }
     
-    static func fetchFacebook(with location: CLLocation,
-                              successHandler: ((_ points: [Venue]) -> Void),
-                              failureHandler: ((_ error: Error) -> Void)) {
-        
-    }
-    
-    static func fetchGoogle(with location: CLLocation,
-                            successHandler: ((_ points: [Venue]) -> Void),
-                            failureHandler: ((_ error: Error) -> Void)) {
-        
-    }
-    
     static func fetchYelp(with location: CLLocation,
-                          successHandler: ((_ points: [Venue]) -> Void),
-                          failureHandler: ((_ error: Error) -> Void)) {
+                          successHandler: @escaping ((_ points: [Venue]) -> Void),
+                          failureHandler: @escaping ((_ error: Error) -> Void)) {
         
     }
 }

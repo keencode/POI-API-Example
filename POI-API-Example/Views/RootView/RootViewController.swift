@@ -1,3 +1,4 @@
+
 //
 //  RootViewController.swift
 //  POI-API-Example
@@ -8,6 +9,7 @@
 
 import UIKit
 import CoreLocation
+import FacebookCore
 
 class RootViewController: UITableViewController {
     
@@ -16,8 +18,50 @@ class RootViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        guard let _ = AccessToken.current else {
+            presentLogin()
+            return
+        }
+    
+        // User is logged in, use 'accessToken' here.
+        checkLocationPermission()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        var title = "Login"
+        
+        if let _ = AccessToken.current {
+            title = "Logout"
+        }
+        
+        let loginButton = UIBarButtonItem(title: title,
+                                          style: .plain,
+                                          target: self,
+                                          action: #selector(RootViewController.presentLogin))
+        navigationItem.rightBarButtonItem = loginButton
+    }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @objc fileprivate func presentLogin() {
+        guard let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
+            return
+        }
+        
+        loginVC.delegate = self
+        let navController = UINavigationController(rootViewController: loginVC)        
+        present(navController, animated: true, completion: nil)
+    }
+    
+    fileprivate func checkLocationPermission() {
         if locationService.canAccessLocation {
+            print("canAccessLocation: \(locationService.canAccessLocation)")
             fetchCurrentLocation()
         }
         else {
@@ -28,18 +72,24 @@ class RootViewController: UITableViewController {
             })
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    func fetchCurrentLocation() {
+    fileprivate func fetchCurrentLocation() {
         locationService.fetchCurrentLocation(with: { (location) in
             self.currentLocation = location
-        }, completionHandler: { (location) in
+        },
+        completionHandler: { (location) in
             self.currentLocation = location
-        }, failureHandler: { (error) in
+            
+            let okAction = UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
+                //
+            })
+            let message = "latitude: \(location.coordinate.latitude) longitude: \(location.coordinate.longitude)"
+            let alertController = UIAlertController(title: "Location Found", message: message, preferredStyle: .alert)
+            alertController.addAction(okAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        },
+        failureHandler: { (error) in
             //
         })
     }
@@ -75,5 +125,12 @@ class RootViewController: UITableViewController {
         mapVC.location = currentLocation
         
         navigationController?.pushViewController(mapVC, animated: true)
+    }
+}
+
+extension RootViewController: LoginViewControllerDelegate {
+    
+    func loginViewControllerShouldClose() {
+        dismiss(animated: true, completion: nil)
     }
 }

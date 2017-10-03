@@ -29,6 +29,8 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+        <string>location-services</string>
+        <string>gps</string>
 	</array>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
@@ -48,5 +50,29 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>For getting data</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb726974580833958</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>726974580833958</string>
+    <key>FacebookClientToken</key>
+    <string>cfa0a6626285b61b142f354b34a22ce5</string>
+    <key>FacebookDisplayName</key>
+    <string>POI-­A­P­I­-­E­x­a­mple</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>So that you can upload photos</string>
 </dict>
 </plist>

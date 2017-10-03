@@ -11,50 +11,24 @@
 		B8474A2716124E6700AA2235 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8474A2616124E6700AA2235 /* Foundation.framework */; };
 		B8474A2916124E6700AA2235 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8474A2816124E6700AA2235 /* CoreGraphics.framework */; };
 		B8474A2F16124E6700AA2235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8474A2D16124E6700AA2235 /* InfoPlist.strings */; };
-		B8474A3116124E6700AA2235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A3016124E6700AA2235 /* main.m */; };
-		B8474A3516124E6700AA2235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A3416124E6700AA2235 /* AppDelegate.m */; };
 		B8474A3716124E6700AA2235 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3616124E6700AA2235 /* Default.png */; };
 		B8474A3916124E6700AA2235 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3816124E6700AA2235 /* Default@2x.png */; };
 		B8474A3B16124E6700AA2235 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3A16124E6700AA2235 /* Default-568h@2x.png */; };
 		B8474A3E16124E6700AA2235 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8474A3C16124E6700AA2235 /* MainStoryboard.storyboard */; };
-		B8474A4116124E6700AA2235 /* FoursquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4016124E6700AA2235 /* FoursquareViewController.m */; };
-		B8474A4316124E6700AA2235 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4216124E6700AA2235 /* first.png */; };
-		B8474A4516124E6700AA2235 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4416124E6700AA2235 /* first@2x.png */; };
-		B8474A4816124E6700AA2235 /* YelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A4716124E6700AA2235 /* YelpViewController.m */; };
-		B8474A4A16124E6700AA2235 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4916124E6700AA2235 /* second.png */; };
-		B8474A4C16124E6700AA2235 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8474A4B16124E6700AA2235 /* second@2x.png */; };
 		B8474A5F1612508400AA2235 /* YelpVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A5E1612508400AA2235 /* YelpVenue.m */; };
-		B8474A631612511A00AA2235 /* YelpService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A621612511A00AA2235 /* YelpService.m */; };
 		B8474A661612513000AA2235 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474A651612513000AA2235 /* MapAnnotation.m */; };
 		B8474A8D161259C000AA2235 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8474A8C161259C000AA2235 /* CoreLocation.framework */; };
 		B8474A8F161259C800AA2235 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8474A8E161259C800AA2235 /* MobileCoreServices.framework */; };
-		B8474AF116125CE100AA2235 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474ACD16125CE100AA2235 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AF216125CE100AA2235 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474ACF16125CE100AA2235 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AF316125CE100AA2235 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AD116125CE100AA2235 /* NSURL+Base.m */; };
-		B8474AF416125CE100AA2235 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = B8474AD316125CE100AA2235 /* Base64Transcoder.c */; };
-		B8474AF516125CE100AA2235 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = B8474AD516125CE100AA2235 /* hmac.c */; };
-		B8474AF616125CE100AA2235 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = B8474AD716125CE100AA2235 /* sha1.c */; };
-		B8474AF716125CE100AA2235 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474ADA16125CE100AA2235 /* OACall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AF816125CE100AA2235 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474ADC16125CE100AA2235 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AF916125CE100AA2235 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474ADE16125CE100AA2235 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AFA16125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AE016125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AFB16125CE100AA2235 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AE216125CE100AA2235 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AFC16125CE100AA2235 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AE416125CE100AA2235 /* OAPlaintextSignatureProvider.m */; };
-		B8474AFD16125CE100AA2235 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AE616125CE100AA2235 /* OAProblem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AFE16125CE100AA2235 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AE816125CE100AA2235 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474AFF16125CE100AA2235 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AEA16125CE100AA2235 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474B0016125CE100AA2235 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AED16125CE100AA2235 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474B0116125CE100AA2235 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474AEF16125CE100AA2235 /* OATokenManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8474B0916125D1700AA2235 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B0416125D1700AA2235 /* FSN_categories.m */; };
-		B8474B0A16125D1700AA2235 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B0616125D1700AA2235 /* FSNConnection.m */; };
-		B8474B0B16125D1700AA2235 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B0816125D1700AA2235 /* FSNData.m */; };
-		B8474B1416125DF100AA2235 /* FoursquareService.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B1116125DF100AA2235 /* FoursquareService.m */; };
 		B8474B1516125DF100AA2235 /* FSVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = B8474B1316125DF100AA2235 /* FSVenue.m */; };
 		B860C1DA1F660F9700C6AC42 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860C1D91F660F9700C6AC42 /* RootViewController.swift */; };
 		B860C1DD1F66119900C6AC42 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860C1DC1F66119900C6AC42 /* MapViewController.swift */; };
 		B860C1DF1F66130A00C6AC42 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860C1DE1F66130A00C6AC42 /* APIService.swift */; };
 		B860C1E11F66147300C6AC42 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860C1E01F66147300C6AC42 /* Venue.swift */; };
 		B860C1E31F662DA500C6AC42 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860C1E21F662DA500C6AC42 /* LocationService.swift */; };
+		B8685C2D1F7718DB00835AA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8685C2C1F7718DB00835AA8 /* LoginViewController.swift */; };
+		B8685C2F1F77195B00835AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8685C2E1F77195B00835AA8 /* AppDelegate.swift */; };
+		B8685C4F1F784BAE00835AA8 /* FacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8685C4E1F784BAD00835AA8 /* FacebookService.swift */; };
+		B8EC62501F78A6FA00FA73A8 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC624F1F78A6FA00FA73A8 /* GoogleService.swift */; };
 		F266693591863BBB6FDF97BC /* Pods_POI_API_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2870E14AD5125138C6A11F39 /* Pods_POI_API_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,74 +42,17 @@
 		B8474A2816124E6700AA2235 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B8474A2C16124E6700AA2235 /* POI-API-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "POI-API-Example-Info.plist"; sourceTree = "<group>"; };
 		B8474A2E16124E6700AA2235 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B8474A3016124E6700AA2235 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8474A3216124E6700AA2235 /* POI-API-Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POI-API-Example-Prefix.pch"; sourceTree = "<group>"; };
-		B8474A3316124E6700AA2235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B8474A3416124E6700AA2235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8474A3616124E6700AA2235 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B8474A3816124E6700AA2235 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B8474A3A16124E6700AA2235 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B8474A3D16124E6700AA2235 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B8474A3F16124E6700AA2235 /* FoursquareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoursquareViewController.h; sourceTree = "<group>"; };
-		B8474A4016124E6700AA2235 /* FoursquareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoursquareViewController.m; sourceTree = "<group>"; };
-		B8474A4216124E6700AA2235 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		B8474A4416124E6700AA2235 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		B8474A4616124E6700AA2235 /* YelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpViewController.h; sourceTree = "<group>"; };
-		B8474A4716124E6700AA2235 /* YelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpViewController.m; sourceTree = "<group>"; };
-		B8474A4916124E6700AA2235 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		B8474A4B16124E6700AA2235 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B8474A5D1612508400AA2235 /* YelpVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpVenue.h; sourceTree = "<group>"; };
 		B8474A5E1612508400AA2235 /* YelpVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpVenue.m; sourceTree = "<group>"; };
-		B8474A611612511A00AA2235 /* YelpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpService.h; sourceTree = "<group>"; };
-		B8474A621612511A00AA2235 /* YelpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpService.m; sourceTree = "<group>"; };
 		B8474A641612513000AA2235 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
 		B8474A651612513000AA2235 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		B8474A8C161259C000AA2235 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B8474A8E161259C800AA2235 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		B8474ACC16125CE100AA2235 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
-		B8474ACD16125CE100AA2235 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
-		B8474ACE16125CE100AA2235 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		B8474ACF16125CE100AA2235 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		B8474AD016125CE100AA2235 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
-		B8474AD116125CE100AA2235 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
-		B8474AD316125CE100AA2235 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
-		B8474AD416125CE100AA2235 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		B8474AD516125CE100AA2235 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
-		B8474AD616125CE100AA2235 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
-		B8474AD716125CE100AA2235 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
-		B8474AD816125CE100AA2235 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
-		B8474AD916125CE100AA2235 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OACall.h; sourceTree = "<group>"; };
-		B8474ADA16125CE100AA2235 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OACall.m; sourceTree = "<group>"; };
-		B8474ADB16125CE100AA2235 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
-		B8474ADC16125CE100AA2235 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
-		B8474ADD16125CE100AA2235 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
-		B8474ADE16125CE100AA2235 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
-		B8474ADF16125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
-		B8474AE016125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
-		B8474AE116125CE100AA2235 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
-		B8474AE216125CE100AA2235 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
-		B8474AE316125CE100AA2235 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
-		B8474AE416125CE100AA2235 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
-		B8474AE516125CE100AA2235 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProblem.h; sourceTree = "<group>"; };
-		B8474AE616125CE100AA2235 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProblem.m; sourceTree = "<group>"; };
-		B8474AE716125CE100AA2235 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
-		B8474AE816125CE100AA2235 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
-		B8474AE916125CE100AA2235 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
-		B8474AEA16125CE100AA2235 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
-		B8474AEB16125CE100AA2235 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
-		B8474AEC16125CE100AA2235 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
-		B8474AED16125CE100AA2235 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
-		B8474AEE16125CE100AA2235 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATokenManager.h; sourceTree = "<group>"; };
-		B8474AEF16125CE100AA2235 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATokenManager.m; sourceTree = "<group>"; };
-		B8474AF016125CE100AA2235 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
-		B8474B0316125D1700AA2235 /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = FSNetworking/src/FSN_categories.h; sourceTree = "<group>"; };
-		B8474B0416125D1700AA2235 /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = FSNetworking/src/FSN_categories.m; sourceTree = "<group>"; };
-		B8474B0516125D1700AA2235 /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = FSNetworking/src/FSNConnection.h; sourceTree = "<group>"; };
-		B8474B0616125D1700AA2235 /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = FSNetworking/src/FSNConnection.m; sourceTree = "<group>"; };
-		B8474B0716125D1700AA2235 /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = FSNetworking/src/FSNData.h; sourceTree = "<group>"; };
-		B8474B0816125D1700AA2235 /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = FSNetworking/src/FSNData.m; sourceTree = "<group>"; };
-		B8474B1016125DF100AA2235 /* FoursquareService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareService.h; sourceTree = "<group>"; };
-		B8474B1116125DF100AA2235 /* FoursquareService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareService.m; sourceTree = "<group>"; };
 		B8474B1216125DF100AA2235 /* FSVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenue.h; sourceTree = "<group>"; };
 		B8474B1316125DF100AA2235 /* FSVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenue.m; sourceTree = "<group>"; };
 		B860C1D81F660F9700C6AC42 /* POI-API-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POI-API-Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -144,6 +61,10 @@
 		B860C1DE1F66130A00C6AC42 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Services/APIService.swift; sourceTree = "<group>"; };
 		B860C1E01F66147300C6AC42 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = Models/Venue.swift; sourceTree = "<group>"; };
 		B860C1E21F662DA500C6AC42 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationService.swift; path = Services/LocationService.swift; sourceTree = "<group>"; };
+		B8685C2C1F7718DB00835AA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Views/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		B8685C2E1F77195B00835AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8685C4E1F784BAD00835AA8 /* FacebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FacebookService.swift; path = Services/FacebookService.swift; sourceTree = "<group>"; };
+		B8EC624F1F78A6FA00FA73A8 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoogleService.swift; path = Services/GoogleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +110,8 @@
 			children = (
 				B860C1DE1F66130A00C6AC42 /* APIService.swift */,
 				B860C1E21F662DA500C6AC42 /* LocationService.swift */,
-				B8474B1016125DF100AA2235 /* FoursquareService.h */,
-				B8474B1116125DF100AA2235 /* FoursquareService.m */,
-				B8474A611612511A00AA2235 /* YelpService.h */,
-				B8474A621612511A00AA2235 /* YelpService.m */,
+				B8685C4E1F784BAD00835AA8 /* FacebookService.swift */,
+				B8EC624F1F78A6FA00FA73A8 /* GoogleService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -201,12 +120,11 @@
 			isa = PBXGroup;
 			children = (
 				B8474A3C16124E6700AA2235 /* MainStoryboard.storyboard */,
+				B8685C2B1F7718B100835AA8 /* Login */,
 				B860C1D71F660F0000C6AC42 /* RootView */,
 				B860C1DB1F66116D00C6AC42 /* MapView */,
 				B8474A641612513000AA2235 /* MapAnnotation.h */,
 				B8474A651612513000AA2235 /* MapAnnotation.m */,
-				B8474A521612501900AA2235 /* Foursquare */,
-				B8474A531612502600AA2235 /* Yelp */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -214,8 +132,7 @@
 		B8474A1516124E6700AA2235 = {
 			isa = PBXGroup;
 			children = (
-				B8474B0216125D0000AA2235 /* FSNetworking */,
-				B8474ACA16125CE100AA2235 /* OAuthConsumer */,
+				B86758E31F818A4B0002CBAF /* Libraries */,
 				B8474A2A16124E6700AA2235 /* POI-API-Example */,
 				B8474A2316124E6700AA2235 /* Frameworks */,
 				B8474A2116124E6700AA2235 /* Products */,
@@ -247,8 +164,7 @@
 		B8474A2A16124E6700AA2235 /* POI-API-Example */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A3316124E6700AA2235 /* AppDelegate.h */,
-				B8474A3416124E6700AA2235 /* AppDelegate.m */,
+				B8685C2E1F77195B00835AA8 /* AppDelegate.swift */,
 				B837CBAA1613530C002F4E07 /* Services */,
 				B837CBA816135305002F4E07 /* Model */,
 				B837CBAB1613533E002F4E07 /* Views */,
@@ -263,108 +179,12 @@
 				B8474A2C16124E6700AA2235 /* POI-API-Example-Info.plist */,
 				B860C1D81F660F9700C6AC42 /* POI-API-Example-Bridging-Header.h */,
 				B8474A2D16124E6700AA2235 /* InfoPlist.strings */,
-				B8474A3016124E6700AA2235 /* main.m */,
 				B8474A3216124E6700AA2235 /* POI-API-Example-Prefix.pch */,
 				B8474A3616124E6700AA2235 /* Default.png */,
 				B8474A3816124E6700AA2235 /* Default@2x.png */,
 				B8474A3A16124E6700AA2235 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B8474A521612501900AA2235 /* Foursquare */ = {
-			isa = PBXGroup;
-			children = (
-				B8474A3F16124E6700AA2235 /* FoursquareViewController.h */,
-				B8474A4016124E6700AA2235 /* FoursquareViewController.m */,
-				B8474A4216124E6700AA2235 /* first.png */,
-				B8474A4416124E6700AA2235 /* first@2x.png */,
-			);
-			name = Foursquare;
-			sourceTree = "<group>";
-		};
-		B8474A531612502600AA2235 /* Yelp */ = {
-			isa = PBXGroup;
-			children = (
-				B8474A4616124E6700AA2235 /* YelpViewController.h */,
-				B8474A4716124E6700AA2235 /* YelpViewController.m */,
-				B8474A4916124E6700AA2235 /* second.png */,
-				B8474A4B16124E6700AA2235 /* second@2x.png */,
-			);
-			name = Yelp;
-			sourceTree = "<group>";
-		};
-		B8474ACA16125CE100AA2235 /* OAuthConsumer */ = {
-			isa = PBXGroup;
-			children = (
-				B8474ACB16125CE100AA2235 /* Categories */,
-				B8474AD216125CE100AA2235 /* Crytpo */,
-				B8474AD916125CE100AA2235 /* OACall.h */,
-				B8474ADA16125CE100AA2235 /* OACall.m */,
-				B8474ADB16125CE100AA2235 /* OAConsumer.h */,
-				B8474ADC16125CE100AA2235 /* OAConsumer.m */,
-				B8474ADD16125CE100AA2235 /* OADataFetcher.h */,
-				B8474ADE16125CE100AA2235 /* OADataFetcher.m */,
-				B8474ADF16125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.h */,
-				B8474AE016125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.m */,
-				B8474AE116125CE100AA2235 /* OAMutableURLRequest.h */,
-				B8474AE216125CE100AA2235 /* OAMutableURLRequest.m */,
-				B8474AE316125CE100AA2235 /* OAPlaintextSignatureProvider.h */,
-				B8474AE416125CE100AA2235 /* OAPlaintextSignatureProvider.m */,
-				B8474AE516125CE100AA2235 /* OAProblem.h */,
-				B8474AE616125CE100AA2235 /* OAProblem.m */,
-				B8474AE716125CE100AA2235 /* OARequestParameter.h */,
-				B8474AE816125CE100AA2235 /* OARequestParameter.m */,
-				B8474AE916125CE100AA2235 /* OAServiceTicket.h */,
-				B8474AEA16125CE100AA2235 /* OAServiceTicket.m */,
-				B8474AEB16125CE100AA2235 /* OASignatureProviding.h */,
-				B8474AEC16125CE100AA2235 /* OAToken.h */,
-				B8474AED16125CE100AA2235 /* OAToken.m */,
-				B8474AEE16125CE100AA2235 /* OATokenManager.h */,
-				B8474AEF16125CE100AA2235 /* OATokenManager.m */,
-				B8474AF016125CE100AA2235 /* OAuthConsumer.h */,
-			);
-			name = OAuthConsumer;
-			path = "Yelp-API/v2/ios/YelpAPI/Libraries/OAuthConsumer";
-			sourceTree = "<group>";
-		};
-		B8474ACB16125CE100AA2235 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				B8474ACC16125CE100AA2235 /* NSMutableURLRequest+Parameters.h */,
-				B8474ACD16125CE100AA2235 /* NSMutableURLRequest+Parameters.m */,
-				B8474ACE16125CE100AA2235 /* NSString+URLEncoding.h */,
-				B8474ACF16125CE100AA2235 /* NSString+URLEncoding.m */,
-				B8474AD016125CE100AA2235 /* NSURL+Base.h */,
-				B8474AD116125CE100AA2235 /* NSURL+Base.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		B8474AD216125CE100AA2235 /* Crytpo */ = {
-			isa = PBXGroup;
-			children = (
-				B8474AD316125CE100AA2235 /* Base64Transcoder.c */,
-				B8474AD416125CE100AA2235 /* Base64Transcoder.h */,
-				B8474AD516125CE100AA2235 /* hmac.c */,
-				B8474AD616125CE100AA2235 /* hmac.h */,
-				B8474AD716125CE100AA2235 /* sha1.c */,
-				B8474AD816125CE100AA2235 /* sha1.h */,
-			);
-			path = Crytpo;
-			sourceTree = "<group>";
-		};
-		B8474B0216125D0000AA2235 /* FSNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				B8474B0316125D1700AA2235 /* FSN_categories.h */,
-				B8474B0416125D1700AA2235 /* FSN_categories.m */,
-				B8474B0516125D1700AA2235 /* FSNConnection.h */,
-				B8474B0616125D1700AA2235 /* FSNConnection.m */,
-				B8474B0716125D1700AA2235 /* FSNData.h */,
-				B8474B0816125D1700AA2235 /* FSNData.m */,
-			);
-			name = FSNetworking;
 			sourceTree = "<group>";
 		};
 		B860C1D71F660F0000C6AC42 /* RootView */ = {
@@ -381,6 +201,21 @@
 				B860C1DC1F66119900C6AC42 /* MapViewController.swift */,
 			);
 			name = MapView;
+			sourceTree = "<group>";
+		};
+		B86758E31F818A4B0002CBAF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B8685C2B1F7718B100835AA8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B8685C2C1F7718DB00835AA8 /* LoginViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,10 +287,6 @@
 				B8474A3916124E6700AA2235 /* Default@2x.png in Resources */,
 				B8474A3B16124E6700AA2235 /* Default-568h@2x.png in Resources */,
 				B8474A3E16124E6700AA2235 /* MainStoryboard.storyboard in Resources */,
-				B8474A4316124E6700AA2235 /* first.png in Resources */,
-				B8474A4516124E6700AA2235 /* first@2x.png in Resources */,
-				B8474A4A16124E6700AA2235 /* second.png in Resources */,
-				B8474A4C16124E6700AA2235 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +300,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-POI-API-Example/Pods-POI-API-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -479,6 +311,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -516,9 +349,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-POI-API-Example/Pods-POI-API-Example-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,37 +369,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B860C1DD1F66119900C6AC42 /* MapViewController.swift in Sources */,
-				B8474A3116124E6700AA2235 /* main.m in Sources */,
-				B8474A3516124E6700AA2235 /* AppDelegate.m in Sources */,
-				B8474A4116124E6700AA2235 /* FoursquareViewController.m in Sources */,
 				B860C1E11F66147300C6AC42 /* Venue.swift in Sources */,
-				B8474A4816124E6700AA2235 /* YelpViewController.m in Sources */,
 				B8474A5F1612508400AA2235 /* YelpVenue.m in Sources */,
-				B8474A631612511A00AA2235 /* YelpService.m in Sources */,
 				B8474A661612513000AA2235 /* MapAnnotation.m in Sources */,
-				B8474AF116125CE100AA2235 /* NSMutableURLRequest+Parameters.m in Sources */,
-				B8474AF216125CE100AA2235 /* NSString+URLEncoding.m in Sources */,
-				B8474AF316125CE100AA2235 /* NSURL+Base.m in Sources */,
-				B8474AF416125CE100AA2235 /* Base64Transcoder.c in Sources */,
-				B8474AF516125CE100AA2235 /* hmac.c in Sources */,
-				B8474AF616125CE100AA2235 /* sha1.c in Sources */,
-				B8474AF716125CE100AA2235 /* OACall.m in Sources */,
-				B8474AF816125CE100AA2235 /* OAConsumer.m in Sources */,
-				B8474AF916125CE100AA2235 /* OADataFetcher.m in Sources */,
-				B8474AFA16125CE100AA2235 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
-				B8474AFB16125CE100AA2235 /* OAMutableURLRequest.m in Sources */,
-				B8474AFC16125CE100AA2235 /* OAPlaintextSignatureProvider.m in Sources */,
-				B8474AFD16125CE100AA2235 /* OAProblem.m in Sources */,
+				B8685C2F1F77195B00835AA8 /* AppDelegate.swift in Sources */,
+				B8685C4F1F784BAE00835AA8 /* FacebookService.swift in Sources */,
 				B860C1DA1F660F9700C6AC42 /* RootViewController.swift in Sources */,
 				B860C1DF1F66130A00C6AC42 /* APIService.swift in Sources */,
-				B8474AFE16125CE100AA2235 /* OARequestParameter.m in Sources */,
-				B8474AFF16125CE100AA2235 /* OAServiceTicket.m in Sources */,
-				B8474B0016125CE100AA2235 /* OAToken.m in Sources */,
-				B8474B0116125CE100AA2235 /* OATokenManager.m in Sources */,
-				B8474B0916125D1700AA2235 /* FSN_categories.m in Sources */,
-				B8474B0A16125D1700AA2235 /* FSNConnection.m in Sources */,
-				B8474B0B16125D1700AA2235 /* FSNData.m in Sources */,
-				B8474B1416125DF100AA2235 /* FoursquareService.m in Sources */,
+				B8685C2D1F7718DB00835AA8 /* LoginViewController.swift in Sources */,
+				B8EC62501F78A6FA00FA73A8 /* GoogleService.swift in Sources */,
 				B860C1E31F662DA500C6AC42 /* LocationService.swift in Sources */,
 				B8474B1516125DF100AA2235 /* FSVenue.m in Sources */,
 			);
@@ -613,10 +427,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 7BJCZ7TQY3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/FacebookSDK";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -632,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -660,9 +477,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 7BJCZ7TQY3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/FacebookSDK";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -671,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -683,6 +503,7 @@
 			baseConfigurationReference = A619BC5B2513C6C8D18B42E8 /* Pods-POI-API-Example.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "POI-API-Example/POI-API-Example-Prefix.pch";
 				INFOPLIST_FILE = "POI-API-Example/POI-API-Example-Info.plist";
@@ -702,6 +523,7 @@
 			baseConfigurationReference = 8D8D8829818FE20195D6061E /* Pods-POI-API-Example.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "POI-API-Example/POI-API-Example-Prefix.pch";
 				INFOPLIST_FILE = "POI-API-Example/POI-API-Example-Info.plist";
